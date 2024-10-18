@@ -1,0 +1,214 @@
+.swiper__secondblock{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    width: 240px;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+}
+
+.swiper__secondblock p{
+    align-self: flex-start;
+}
+
+.swiper__secondblock a{
+    align-self: flex-end;
+}
+
+.swiper-slide{
+    width: 240px !important;
+}
+
+.swiper-slide:first-child{
+    margin-left: 16px;
+}
+
+.swiper2{
+    width: 240px !important;
+    height: 160px !important;
+    overflow: visible !important;
+    margin-left: 0 !important;
+}
+
+span.swiper-pagination-bullet{
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 12px !important;
+    margin-left: 0 !important;
+    background: #b5b6bc;
+}
+span.swiper-pagination-bullet:last-child{
+    margin-right: 0px !important;
+}
+
+.swiper2-pagination{
+    margin-top: 10px !important;
+    margin-left: 60px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #979797 !important;
+}
+
+.swiper-secondtext{
+    height: 80px;
+    box-sizing: border-box;
+    padding: 16px;
+    border-top: 1px solid #b8ffec;
+    background-color: #fff;
+}
+
+.swiper-secondtext h1{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2;
+    color: #7e7e82;
+    font-family: 'TT Lakes', serif;
+    font-weight: 400;
+}
+
+.swiper__secondcontainer{
+    height: 228px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    padding-top: 16px;
+}
+
+/*768 - 1119 */
+
+.list-secondcontainer{
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 14px;
+}
+
+.list-species{
+    display: grid;
+    grid-template-columns: 224px 224px 224px;
+    gap: 16px 24px;
+    width: 720px;
+    height: 160px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    margin-bottom: 24px;
+}
+
+.new-list-species{
+    display: grid;
+    grid-template-columns: 224px 224px 224px;
+    gap: 16px 24px;
+    width: 720px;
+    height: 512px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    margin-bottom: 24px;
+}
+
+.type{
+    box-sizing: border-box;
+    min-width: 224px;
+    height: 160px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.type p{
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: medium;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    margin: 0;
+    color: #1b1c21;
+}
+
+.type a{
+    align-self: flex-end;
+}
+
+.button-container{
+    width: 720px;
+    margin: 0 auto;
+}
+
+.second-button{
+    display: flex;
+    justify-content: space-between;
+    min-width: 88px;
+    height: 24px;
+    align-items: center;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.button__img{
+    transform: rotate(180deg);
+}
+
+/*////////////////////////////////////////////////*/
+
+/* media */
+
+@media (width < 768px) {
+    .list-secondcontainer{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper__secondcontainer{
+        display: none;
+    }
+    .swiper-secondtext{
+        width: inherit;
+    }
+    .list-secondcontainer{
+        min-height: 264px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439.98px) {
+    .swiper-secondtext{
+        height: 56px;
+        padding-left: 24px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .swiper-secondtext{
+        height: 56px;
+        padding-left: 32px;
+    }
+    .list-species{
+        width: 1056px;
+        grid-template-columns: 240px 240px 240px 240px;
+        gap: 16px 32px;
+    }
+    .new-list-species{
+        width: 1056px;
+        grid-template-columns: 240px 240px 240px 240px;
+        gap: 16px 32px;
+        height: 512px;
+    }
+    .button-container{
+        width: 1056px;
+    }
+    .list-secondcontainer{
+        min-height: 280px;
+    }
+}

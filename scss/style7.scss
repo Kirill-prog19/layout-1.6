@@ -1,0 +1,157 @@
+$var1: #ffffff;
+$var2: #1b1c21;
+$var3: #41f6d7;
+$var4: #eaeaea;
+$var5: #b5b6bc;
+$var6: #7e7e82;
+$var7: #ff3e79;
+
+.call {
+	width: 320px;
+	display: none;
+    @media (width < 768px) {
+        background-color: #fff;
+    }
+    @media (min-width: 768px) {
+        z-index: 1;
+        width: 100%;
+    }
+	&__container {
+		box-sizing: border-box;
+		width: 320px;
+		height: 100vh;
+		padding: 16px;
+		position: absolute;
+		right: 0;
+		font-family: 'TT Lakes', sana-serif;
+		background-color: $var1;
+        @media (min-width: 768px) {
+            width: 440px;
+            padding: 40px 32px;
+            border-left: 1px solid #d9fff5;
+            z-index: 3;
+            box-shadow: -16px 0 52px 0 rgba(14,24,80,0.2);
+        }
+	}
+	h1 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		color: $var2;
+		margin: 40px 0 24px;
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+	}
+	&__block {
+		width: 4px;
+		height: 40px;
+		background-color: $var3;
+		border-radius: 0 6px 6px 0;
+		position: absolute;
+		left: 0;
+		top: 96px;
+        @media (min-width: 768px) {
+            top: 36px;
+        }
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0px;
+		color: $var6;
+		margin-bottom: 20px;
+        @media (min-width: 768px) {
+            width: 376px;
+        }
+		span {
+			color: $var7;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	&__button {
+		background-color: $var7;
+		border: none;
+		width: 136px;
+		height: 32px;
+		border-radius: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 8px 0 16px;
+		color: $var1;
+		box-sizing: border-box;
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 700;
+		letter-spacing: -0.15px;
+		font-family: 'TT Lakes', sans-serif;
+		margin-left: 152px;
+        @media (min-width: 768px) {
+            margin-left: 240px;
+        }
+	}
+	/*При нажатии*/
+	&-click {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		width: 100vw;
+		height: 100vh;
+	}
+	&__blure {
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		z-index: 3;
+		right: 440px;
+		background-color: rgba(255,255,255,0.9);
+	}
+    &__close {
+        @media (min-width: 768px) {
+            position: absolute;
+            z-index: 3;
+            left: -70px;
+            top: 35px;
+        }
+    }
+}
+input {
+	width: 288px;
+	height: 48px;
+	border: 1px solid $var4;
+	padding-left: 16px;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	margin-bottom: 16px;
+    @media (min-width: 768px) {
+        width: 376px;
+    }
+	&::placeholder {
+		font-family: 'TT Lakes', sans-serif;
+		color: $var5;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+	}
+}
+.body__container-call {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+.navigation{
+    height: 100vh;
+    width: 320px;
+    display: none;
+}
+
+.navigation__container{
+    height: 100vh;
+    width: 320px;
+    max-height: 100%;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background-color: #fff;
+}
+
+.navigation__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.navigation__link{
+    width: 40px;
+    height: 40px;
+}
+
+.navigation__link_left{
+    margin-right: 15px;
+}
+
+.navigation__link_right{
+    margin-left: 78px;
+}
+
+.bottom__container{
+    position: absolute;
+    bottom: 18px;
+}
+
+.navigation__text:hover{
+    opacity: 0.5;
+}
+
+.navigation__text:hover::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    left: 0;
+}
+
+.navigation__options{
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    align-self: end;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.navigation__contacts{
+    margin-bottom: 40px;
+}
+
+.navigation__mail{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.navigation__number{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin: 0;
+}
+
+.navigation__lang{
+    display: flex;
+}
+
+.navigation__lang a{
+    margin: 0;
+    margin-right: 7px;
+}
+
+.navigation__lang a:last-child{
+    margin: 0;
+}
+
+.navigation__lang p:first-child{
+    color: #7e7e82;
+}
+
+/*При нажатии для разрешения 768*/
+
+.blure{
+    display: none;
+}
+
+
+.navigation__blure{
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    position: absolute;
+    left: 320px;
+    height: 100vh;
+}
+
+.body__container-relative{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*при нажатии при разрешении <768px*/
+
+.navigation-click{
+    display: block;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 2;
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1439.98px) {
+    .navigation{
+        width: 100%;
+    }
+    .navigation__container{
+        position: absolute;
+        z-index: 3;
+        box-shadow: 16px 0 52px 0 rgba(14,24,80,0.2);
+    }
+}
+
+@media (width < 768px) {
+    .navigation{
+        background-color: #fff;
+        height: 100vh;
+    }
+    .navigation__container{
+        width: 100%;
+    }
+    .navigation__blure{
+        width: 0;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .navigation{
+        box-shadow: none;
+        display: block;
+        width: 320px;
+        background-color: #fff;
+    }
+    .navigation__header a:first-child{
+        display: none;
+    }
+    .navigation__container{
+        height: 100vh;
+        box-shadow: none;
+        position: relative;
+    }
+    .navigation__blure{
+        display: none;
+    }
+}
